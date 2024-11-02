@@ -3,7 +3,7 @@ body{
 }
 .top-head{
     background-color: #003566;
-    height: 112;
+    height: 80;
     width: 100%;
     display: flex;
     align-items: center;
@@ -13,8 +13,18 @@ body{
     padding-left: 41;
 
 }
+.top-head a{
+    text-decoration: none;
+}
 
 .Logo{
-    height: 75;
+    height: 65;
     width: auto;
+}
+.SMART{
+    color: #8c97a1;
+    font-size: 64px; 
+    font-family: Inter; 
+    font-weight: 800; 
+    word-wrap: break-word;
 }
