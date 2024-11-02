@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background: linear-gradient(to bottom, #708090, #6699CC)
 }
 .top-head{
     background-color: #003566;
@@ -10,21 +11,57 @@ body{
     position: fixed;
     top: 0;
     color: white;
-    padding-left: 41;
+    padding-left: 40;
+
 
 }
 .top-head a{
+    display: flex;
     text-decoration: none;
+
 }
 
 .Logo{
     height: 65;
     width: auto;
+    padding-right: 10;
+
 }
+.Logo2{  
+    height: 150;
+    width: auto;
+    padding-right: 10;
+}
+
 .SMART{
-    color: #8c97a1;
+    color: #f1f1f1;
     font-size: 64px; 
-    font-family: Inter; 
-    font-weight: 800; 
-    word-wrap: break-word;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.Content{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.Signin, .Signup {
+    display: block;
+    margin-left: 750;
+    margin-top: 50;
+    height: 100px;;
+    width: 350PX;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px; 
+    
+    font-size: 60;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.Signin:hover, .Signup:hover{
+    background-color: #01680e;
 }
