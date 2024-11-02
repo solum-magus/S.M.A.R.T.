@@ -1,0 +1,84 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.25fr 4.75fr;
+    grid-template-rows: 0.5fr 4.5fr;
+    grid-template-areas:
+        'nav nav'
+        'side main'
+}
+
+nav {
+    background-color: #4A628A;
+    grid-area: nav;
+    position: sticky;
+    padding: 16px;
+    box-shadow: 0px 5px 4px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+}
+
+#side {
+    background-color: #4A628A;
+    grid-area: side;
+}
+
+#name {
+    margin-left: 5px;
+    color: white;
+    font-size: 64px;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#prof {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 100px;
+}
+
+/* MAIN */
+#homeprof {
+    margin-top: 20px;
+    margin-inline: 30px;
+    background-color: #7AB2D3;
+    border-radius: 20px;
+}
+
+#homeprof img {
+    margin: 30px;
+    height: 60px;
+    width: auto;
+}
+
+#homeprof span {
+    display: inline-block;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#report {
+    margin-top: 20px;
+    margin-inline: 30px;
+    background-color: #7AB2D3;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#report label {
+    margin: 10px;
+}
