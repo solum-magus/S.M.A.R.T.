@@ -2,12 +2,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Signup</title>
+    <link rel="stylesheet" href="Design.css">
+    <link rel="icon" href="Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
     <h1>Signup</h1>
 
-    <form action="process-signup.php" method="post">
+    
+    <div class="top-head">
+        <a href="index.html">
+          <img src="Logo.png" alt="SMART Logo" class="Logo">
+          <span class="SMART"> SMART </span>
+        </a>
+      </div>
+  
+      <div class="Content">
+        <h1 class="Welcome">WELCOME!</h1>
+        <p class="Subhead">Create your account</p>
+
+        
+        <form action="process-signup.php" method="post">
         <div>
             <label for="position">POSITION</label>
             <select id="position" name="position">
@@ -43,9 +60,13 @@
             <label for="id_number">SCHOOL ID</label>
             <input type="number" id="id_number" name="id_number">
         </div>
-
-        <button type="submit">Signup</button>
+        <button type="submit"><p class="Create_Account">Create account<p></button>
     </form>
+
+    <p class="Already_Account">Already have an account? <a href="Signin.html">Sign in</a></p>
+    <p class="terms">By creating an account, you agree to our <a href="terms.html">Terms and Conditions</a></p>
+    
+</div>
 </body>
 
 
