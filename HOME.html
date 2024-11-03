@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SMART - Home</title>
         <link rel = "stylesheet" href = "HomeStyle.css">
+        <link rel = "stylesheet" href = "https://fonts.google.com/specimen/Lato?query=lato">
     </head>
     <body>
         <div class="Container">
@@ -11,35 +12,40 @@
                 <svg id="logo" height="50" width="50">
                     <image height="50" width="50" href="/Assets/Logo2.png"></image>
                 </svg>
-                <span id="name">SMART</span>
+                <span id="smart">SMART</span>
             </nav>
 
             <main>
                 <div id="homeprof">
-                    <img id="prof2" src="/Assets/Profile.png">
-                    <span>Name</span>
-                    <span>(Position)</span>
+                    <div id="prof22"><img id="prof2" src="/Assets/Profile.png"></div>
+                    <div id="nameposition"><span>Stephen Chase N. Nepomuceno</span>
+                    <span>(Student)</span></div>
                 </div>
 
                 <div id="report">
                     <span style="font-size: 30px; font-weight: bold;">Report Facility Issue</span>
                     
-                    <br>
                     <form>
-                        <label>Name & Section</label><br>
+                        <div id="inputdiv">
+                        <p>Name & Section</p>
                         <input type="text">
                         <br>
 
-                        <label>Location of Issue</label><br>
+                        <p>Location of Issue</p>
                         <input type="text">
                         <br>
 
-                        <label>Problem</label><br>
+                        <p>Problem</p>
                         <input type="text">
                         <br>
                         
-                        <label>Description</label><br>
+                        <p>Description</p>
                         <input type="text">
+                        <br>
+                        <br>
+
+                        <input type="submit" value="Submit Report">
+                        </div>
                     </form>
                 </div>
             </main>
