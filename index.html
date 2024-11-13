@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>SMART</title>
+    <link rel="stylesheet" href="Style/index.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page" id="mainPage">
+        <div class="header">
+            <img src="Assets/Logo.png" alt="SMART Logo" class="Logo">
+            <h1>SMART</h1>
+        </div>
+        <div class="content">
+            <h2>Welcome!</h2>
+            <div class="buttons">
+                <button onclick="navigateTo('signInPage')">Sign In</button>
+                <button onclick="navigateTo('signUpPage')">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="signUpPage" style="display: none;">
+        <div class="header">
+            <img src="Assets/Logo.png" alt="SMART Logo" class="Logo">
+            <h1>SMART</h1>
+        </div>
+        <div class="content">
+            <h2>Create your account</h2>
+            <form id="signUpForm">
+                <div class="form-group">
+                    <label for="position">Position</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select Position</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <div class="form-group" onsubmit="return validateSignInForm()">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="school-id">School ID</label>
+                    <input type="text" id="school-id" name="school-id" maxlength="10" required>
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>By signing up, you agree to our <a href="#" onclick="navigateTo('termsPage')">Terms and Policy</a>.</p>
+        </div>
+    </div>
+
+    <div class="page" id="signInPage" style="display: none;">
+        <div class="header">
+            <img src="Assets/Logo.png" alt="SMART Logo" class="Logo">
+            <h1>SMART</h1>
+        </div>
+        <div class="content">
+            <h2>Welcome!</h2>
+            <form id="signInForm" onsubmit="return validateSignInForm()">
+                 <div class="form-group">
+                    <label for="signInSchoolId">School ID</label>
+                    <input type="text" id="signInSchoolId" name="signInSchoolId" maxlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="signInPassword">Password</label>
+                    <input type="password" id="signInPassword" name="signInPassword" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Don’t have an account yet? <a href="#" onclick="navigateTo('signUpPage')">Create an account</a>.</p>
+        </div>
+    </div>
+
+    <div class="page" id="termsPage" style="display: none;">
+        <div class="header">
+            <h1>Welcome to SMART!</h1>
+        </div>
+        <div class="content">
+            <p>Before continuing, please take a moment to review and agree to our Terms & Conditions and Privacy Policy.</p>
+            <p>Our Terms & Conditions state that by using this app, you agree to act responsibly and follow all applicable laws. You are responsible for maintaining the confidentiality of your account credentials, and any activity under your account is your responsibility. We aim to keep the app running smoothly but cannot guarantee uninterrupted service. Updates may be rolled out to improve functionality, and it's your responsibility to keep the app updated. We reserve the right to terminate your access for violating these terms.</p>
+            <p>Our Privacy Policy outlines how we collect and use your personal data. We may collect information such as your name, email, and usage data to enhance your experience. We do not share your data with third parties without your consent, and we take necessary precautions to safeguard your information. However, no system is completely secure, and we cannot guarantee absolute protection. You have the right to request access to your data at any time.</p>
+            <p>By proceeding, you acknowledge that you have read and accept our Terms & Conditions and Privacy Policy.</p>
+            <button onclick="navigateTo('signUpPage')">Proceed</button>
+        </div>
+    </div>
+</body>
+</html>
