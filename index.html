@@ -29,7 +29,7 @@
         </div>
         <div class="content">
             <h2>Create your account</h2>
-            <form id="signUpForm">
+            <form action="signup.php" method="post" id="signUpForm">
                 <div class="form-group">
                     <label for="position">Position</label>
                     <select id="position" name="position" required>
@@ -39,19 +39,23 @@
                         <option value="admin">Admin</option>
                     </select>
                 </div>
-                <div class="form-group" onsubmit="return validateSignInForm()">
+                <div class="form-group" ><!--onsubmit="return validateSignInForm()"-->
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="full-name" required>
+                    <input type="text" id="full_name" name="full_name" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                 </div>
                 <div class="form-group">
-                    <label for="school-id">School ID</label>
-                    <input type="text" id="school-id" name="school-id" maxlength="10" required>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
                 </div>
-                <button type="submit">Create Account</button>
+                <div class="form-group">
+                    <label for="school-id">School ID</label>
+                    <input type="text" id="school_id" name="school_id" maxlength="11" required>
+                </div>
+                <button>Create Account</button><!--type="submit"-->
             </form>
             <p>By signing up, you agree to our <a href="#" onclick="navigateTo('termsPage')">Terms and Policy</a>.</p>
         </div>
@@ -64,14 +68,14 @@
         </div>
         <div class="content">
             <h2>Welcome!</h2>
-            <form id="signInForm" onsubmit="return validateSignInForm()">
+            <form action="signin.php" method="post" id="signInForm"> <!--onsubmit="return validateSignInForm()"-->
                  <div class="form-group">
-                    <label for="signInSchoolId">School ID</label>
-                    <input type="text" id="signInSchoolId" name="signInSchoolId" maxlength="10" required>
+                    <label for="signin_school_id">School ID</label>
+                    <input type="text" id="signin_school_id" name="signin_school_id" maxlength="11" required>
                 </div>
                 <div class="form-group">
-                    <label for="signInPassword">Password</label>
-                    <input type="password" id="signInPassword" name="signInPassword" required>
+                    <label for="signin_password">Password</label>
+                    <input type="password" id="signin_password" name="signin_password" required>
                 </div>
                 <button type="submit">Sign In</button>
             </form>
