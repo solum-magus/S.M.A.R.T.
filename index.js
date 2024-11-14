@@ -22,8 +22,8 @@ function validateSignUpForm() {
 }
 
 function validateSignInForm() {
-    const password = document.getElementById('signInPassword').value.trim();
-    const schoolId = document.getElementById('signInSchoolId').value.trim();
+    const password = document.getElementById('signin_password').value.trim();
+    const schoolId = document.getElementById('signin_school_id').value.trim();
 
     if (password && schoolId) {
         alert("Logged in successfully!");
