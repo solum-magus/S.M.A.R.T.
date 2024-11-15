@@ -13,6 +13,7 @@ body {
 }
 
 .Container {
+    z-index: 1;
     display: grid;
     height: 100vh;
     grid-template-columns: 0.25fr 4.75fr;
@@ -24,6 +25,7 @@ body {
 
 
 nav {
+    z-index: 1;
     background-color: #4A628A;
     grid-area: nav;
     top: 0px;
