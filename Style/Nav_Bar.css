@@ -50,6 +50,11 @@ main {
     font-size: 64px;
 }
 
+
+a{
+    text-decoration: none; /*this removes the underline under SMART beside the LOGO*/
+}
+
 #icons {
     display: flex;
     align-items: center;
