@@ -27,7 +27,7 @@ function validateSignInForm() {
 
     if (password && schoolId) {
         alert("Logged in successfully!");
-        window.location.href = "Pages/Homepage.html";
+        window.location.href = "Pages/Homepage.php";
         return false;
     } else {
         alert("Please fill in both fields.");
