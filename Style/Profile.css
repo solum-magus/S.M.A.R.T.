@@ -1,8 +1,5 @@
 .profile-container {
-    background-color: #f3efef;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 250;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -30,10 +27,11 @@
 }
 
 .profile-details h2 {
+    padding: 10px;
     font-size: 18px;
     color: #4A628A;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 .profile-details p,
