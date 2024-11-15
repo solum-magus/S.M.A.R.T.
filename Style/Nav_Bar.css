@@ -9,7 +9,6 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: "Lato", normal;
 }
 
 .Container {
@@ -22,7 +21,6 @@ body {
         'nav nav'
         'side main'
 }
-
 
 nav {
     z-index: 1;
@@ -52,8 +50,7 @@ main {
     font-size: 64px;
 }
 
-
-a{
+a {
     text-decoration: none; /*this removes the underline under SMART beside the LOGO*/
 }
 
