@@ -9,19 +9,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link rel = "stylesheet" href = "../Style/Feedback.css">
         <link rel = "stylesheet" href = "../Style/Nav_Bar.css">
-		<link rel = "stylesheet" href = "https://fonts.google.com/specimen/Lato?query=lato">
     </head>
 
     <body>
         <div class="Container">
             <nav>
-                <a href="Homepage.html">
-                    <svg id="logo" height="50" width="50">
-                        <image height="50" width="50" href="../Assets/Logo2.png"></image>
-                    </svg>
-                    <span id="smart">SMART</span>
-                </a>
-            </nav>
+			    <svg id="logo" height="50" width="50">
+                    <image height="50" width="50" href="../Assets/Logo2.png"></image>
+                </svg>
+                <span id="smart">SMART</span>
+			</nav>
+
             <main>
 			       <div id="nameid">				         
 						       <span style="font-size: 30px; font-weight: bold;">Report ID</span>						  							  						
@@ -43,11 +41,11 @@
             			
             <div id="side">
 			    <div id="icons">
-                    <a href="Profile.html"><img id="prof" src="../Assets/Profile.png"></a>
-                    <a href="Homepage.html"><img id="home" src="../Assets/Home.png"></a>
-                    <a href="History.html"><img id="id" src="../Assets/History.png"></a>
-                    <a href="Feedback.html"><img id="fb" src="../Assets/Feedback.png"></a>
-                    <a href="Notification.html"><img id="notif" src="../Assets/Notification.png"></a>
+                    <a href="Profile.php"><img id="prof" src="../Assets/Profile.png"></a>
+                    <a href="Homepage.php"><img id="home" src="../Assets/Home.png"></a>
+                    <a href="History.php"><img id="id" src="../Assets/History.png"></a>
+                    <a href="Feedback.php"><img id="fb" src="../Assets/Feedback.png"></a>
+                    <a href="Notification.php"><img id="notif" src="../Assets/Notification.png"></a>
                 </div>
 			</div>
 			
