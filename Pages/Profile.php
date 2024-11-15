@@ -38,6 +38,12 @@
                             <li>Submitted feedback - 08/10/2024</li>
                         </ul>
                     </div>
+
+                    <div id="signout_button">
+                        <a href="../signout.php"><button>Sign out</button></a>
+
+                    </div>
+
                 </div>
             </main>
 
