@@ -30,11 +30,13 @@
 				        <input type="text">
 						<div class="container1">
     		                <select>
-                                <option value="australia">Australia</option>
-                                <option value="canada">Canada</option>
-                                <option value="usa">USA</option>
+                                <option value="5">Excellent</option>
+                                <option value="4">Good</option>
+                                <option value="3">Fair</option>
+                                <option value="2">Poor</option>
+                                <option value="1">Very Poor</option>
                             </select>
-                            <button type="submit">Submit</button>						 
+                            <button type="Submit">Submit</button>						 
 						</div>
 				   </div>		
 			</main>	
