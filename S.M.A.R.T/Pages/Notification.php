@@ -21,8 +21,36 @@
             </nav>
             <main>
                 <div id="notifinfo">
+                    <h2>Notifications</h2>
                     <div class="notifbar">
-                        
+                        <div class="notify-p">
+                            <h3>STATUS: Pending</h3>
+                            <p>Report ID: PLACEHOLDER</p>
+                            <p>Problem: PLACEHOLDER</p>
+                            <p>Date Report: PLACEHOLDER</p>
+                            <p>Date Resolved: ???</p>
+                        </div>
+                        <div class="notify-o">
+                            <h3>STATUS: Ongoing</h3>
+                            <p>Report ID: PLACEHOLDER</p>
+                            <p>Problem: PLACEHOLDER</p>
+                            <p>Date Report: PLACEHOLDER</p>
+                            <p>Date Resolved: ???</p>
+                        </div>
+                        <div class="notify-r">
+                            <h3>STATUS: Resolved</h3>
+                            <p>Report ID: PLACEHOLDER</p>
+                            <p>Problem: PLACEHOLDER</p>
+                            <p>Date Report: PLACEHOLDER</p>
+                            <p>Date Resolved: PLACEHOLDER</p>
+                        </div>
+                        <div class="notify-r">
+                            <h3>STATUS: Resolved</h3>
+                            <p>Report ID: PLACEHOLDER</p>
+                            <p>Problem: PLACEHOLDER</p>
+                            <p>Date Report: PLACEHOLDER</p>
+                            <p>Date Resolved: PLACEHOLDER</p>
+                        </div>
                     </div>
                 </div>
             </main>
