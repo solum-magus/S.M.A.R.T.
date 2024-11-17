@@ -31,10 +31,13 @@
 
                         exit;
                     case "Admin":
-                        header("Location: /S.M.A.R.T/errorpage.html");
+                        header("Location: /S.M.A.R.T/Admin.html");
                         exit;
                     case "Teacher":
-                        header("Location: /S.M.A.R.T/errorpage.html");
+                        header("Location: /S.M.A.R.T/Pages/Homepage.php");
+                        exit;
+                    case "Maintenance Staff":
+                        header("Location: /S.M.A.R.T/Page/Admin.php");
                         exit;
                 }
 
