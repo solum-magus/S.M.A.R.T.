@@ -1,16 +1,12 @@
-/*Main*/
 #nameid {
-	
 	margin-top: 20px;
     margin-inline: 30px;
     background-color: #7AB2D3;
     border-radius: 20px;
     display: grid;
 	padding: 20px;
-	
-	
-   
 }
+
 #nameid input:not(:last-child) {
     display: flex;
     padding: 10px;
@@ -31,7 +27,6 @@
     margin-top: 15px;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
     background-color: #DFF2EB;
-	
 }
 
 #feedback {
@@ -61,18 +56,15 @@
     border: none;
     color: black;
     font-size: 20px;
-    
     margin-top: 15px;
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);  
-	
 }
 #feedback input[type=text] {
-	
 	padding: 12px 50px;
 }
+
 .Container1 {
     display: grid;
-    	
     grid-template-areas:
         'select button';
 }
@@ -84,7 +76,6 @@
 	border-radius: 5px;	
 	font-size: 16px;
     cursor: pointer;
-    
 }
 #feedback .container1 button {
 	display: grid;
@@ -94,8 +85,4 @@
     padding: 20px;
 	border-radius: 5px;	
 	font-size: 16px;
-	
 }
-
-
-
