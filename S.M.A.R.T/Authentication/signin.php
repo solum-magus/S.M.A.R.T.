@@ -26,12 +26,13 @@
                         $_SESSION["fname"] = $user["full_name"];
                         $_SESSION["id"] = $user["school_id"];
                         $_SESSION["position"] = $user["position"];
+                        $_SESSION["bio"] = $user["bio"];
 
                         header("Location: /S.M.A.R.T/Pages/Homepage.php");
 
                         exit;
                     case "Admin":
-                        header("Location: /S.M.A.R.T/Admin.html");
+                        header("Location: /S.M.A.R.T/Pages/Admin.php");
                         exit;
                     case "Teacher":
                         header("Location: /S.M.A.R.T/Pages/Homepage.php");
