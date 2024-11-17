@@ -1,3 +1,26 @@
+<?php
+
+    session_start();
+
+    if (isset($_SESSION["fname"]) && isset($_SESSION["position"])) {
+
+        $mysqli = require __DIR__ . "/../database.php";
+
+        $fname = $mysqli->real_escape_string($_SESSION["fname"]);
+        $position = $mysqli->real_escape_string($_SESSION["position"]);
+
+        $sql = "SELECT * FROM userinfo
+                WHERE full_name = '$fname'
+                AND position = '$position'";
+
+        $result = $mysqli->query($sql);
+
+        $user = $result->fetch_assoc();
+
+    }
+
+?>
+
 <html>
     <head>
         <meta charset="UTF-8">
