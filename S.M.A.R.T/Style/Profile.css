@@ -1,0 +1,70 @@
+.profile-container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.profile-header {
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-position {
+    font-size: 16px;
+    color: #777;
+}
+
+.profile-details h2 {
+    padding: 10px;
+    font-size: 18px;
+    color: #4A628A;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile-details p,
+.profile-details ul {
+    color: #333;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.profile-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#signout_button button{
+    font-size: large;
+    margin-top: 100px;
+}
+
+/* Change Password Form designs*/
+#ChangePasswordForm {
+    padding: 10px;
+    margin-top: 50px;
+    margin-inline: auto;
+    border-radius: 20px;
+    display: flex;
+    font-size: large;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7AB2D3;
+    width: 70%;
+}
+#ChangePasswordForm input{
+    margin: 10px;
+    width: 70%;
+}
