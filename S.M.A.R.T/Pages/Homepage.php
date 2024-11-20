@@ -47,7 +47,7 @@
                 <div id="homeprof">
                     <div id="prof22"><img id="prof2" src="../Assets/Profile.png"></div>
 
-                    <?php if (isset($fname)):  ?>
+                    <?php if (isset($fname) && isset($position)):  ?>
 
                     <div id="nameposition"><span><?= htmlspecialchars($user["full_name"]) ?></span>
                     <span><?= htmlspecialchars($user["position"]) ?></span></div>
@@ -58,26 +58,26 @@
                 <div id="report">
                     <span style="font-size: 30px; font-weight: bold;">Report Facility Issue</span>
                     
-                    <form>
+                    <form action="../Authentication/makereport.php" method="post">
                         <div id="inputdiv">
                         <p>Name & Section</p>
-                        <input type="text">
+                        <input type="text" id="rname" name="rname" required>
                         <br>
 
                         <p>Location of Issue</p>
-                        <input type="text">
+                        <input type="text" id="plocation" name="plocation" require>
                         <br>
 
                         <p>Problem</p>
-                        <input type="text">
+                        <input type="text" id="problem" name="problem" require>
                         <br>
                         
                         <p>Description</p>
-                        <input type="text">
+                        <input type="text" id="pdescription" name="pdescription" require>
                         <br>
                         <br>
 
-                        <input type="submit" value="Submit Report">
+                        <button>Submit Report</button>
                         </div>
                     </form>
                 </div>
