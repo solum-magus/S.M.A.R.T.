@@ -61,11 +61,26 @@
                     <form action="../Authentication/makereport.php" method="post">
                         <div id="inputdiv">
                         <p>Name & Section</p>
-                        <input type="text" id="rname" name="rname" required>
+                        <input type="text" id="rname" name="rname" require>
                         <br>
 
                         <p>Location of Issue</p>
-                        <input type="text" id="plocation" name="plocation" require>
+                        <select id="position" id="plocation" name="plocation" require>
+                            <option disabled>Select Location</option>
+                            <option value="RM101">RM101</option>
+                            <option value="RM102">RM102</option>
+                            <option value="RM103">RM103</option>
+                            <option value="RM104">RM104</option>
+                            <option value="RM105">RM105</option>
+                            <option value="RM106">RM106</option>
+                            <option value="RM107">RM107</option>
+                            <option value="RM108">RM108</option>
+                            <option value="Physics Laboratory">Physics Laboratory</option>
+                            <option value="Chemistry Laboratory">Chemistry Laboratory</option>
+                            <option value="Dining Room">Dining Room</option>
+                            <option value="Amphitheater">Amphitheater</option>
+                            <option value="TLAB">TLAB</option>
+                        </select>
                         <br>
 
                         <p>Problem</p>
