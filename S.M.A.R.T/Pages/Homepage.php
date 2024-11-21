@@ -60,7 +60,7 @@
                     
                     <form action="../Authentication/makereport.php" method="post">
                         <div id="inputdiv">
-                        <p>Name & Section</p>
+                        <p>Name</p>
                         <input type="text" id="rname" name="rname" require>
                         <br>
 
