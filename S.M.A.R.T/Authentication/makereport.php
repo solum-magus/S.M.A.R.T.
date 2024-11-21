@@ -25,7 +25,11 @@
         
         exit;
     } catch (Exception) {
-        die("There was a problem submitting your report.");
+        echo
+        "<script>
+            alert('There was a problem submitting your report.');
+            window.location.href = '../Pages/Homepage.php';
+        </script>";
     }
     
 
