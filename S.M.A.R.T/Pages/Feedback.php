@@ -19,18 +19,19 @@
                 <span id="smart">SMART</span>
             </nav>
             <main>
+                <form action="../Authentication/sendfeedback.php" method="post">
 			       <div id="nameid">				         
 						       <span style="font-size: 30px; font-weight: bold;">Report ID</span>						  							  						
-						  <input class="input1">				   
+						  <input class="input1" id="id_report" name="id_report" placeholder="Please make sure the Report ID exists and only input numbers.">				   
 				   </div>
 				   <div id="feedback">
 				        <span style="font-size: 30px; font-weight: bold;">Feedback</span>
 						
-				        <textarea class="input2"></textarea>
+				        <textarea class="input2" id="user_feedback" name="user_feedback"></textarea>
 						<div class="container1">
     		                
-							<select>
-                                <option value=""disabled selected>Rating</option>							
+							<select id="rating" name="rating">
+                                <option value=""disabled selected>Rating</option>				
                                 <option style="color: red">Terrible</option>
                                 <option style="color: orange">Poor</option>
                                 <option style="color: white">Satisfactory</option>
@@ -38,7 +39,8 @@
                                 <option style="color: green">Excellent</option>							
                             </select>
 							
-                        <button>Submit</button>	
+                        <button>Submit</button>
+                    </form>	
 					 
 						</div>
 				   </div>		
