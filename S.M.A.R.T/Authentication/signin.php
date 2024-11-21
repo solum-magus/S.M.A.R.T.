@@ -32,12 +32,39 @@
 
                         exit;
                     case "Admin":
+
+                        session_start();
+                        session_regenerate_id();
+
+                        $_SESSION["fname"] = $user["full_name"];
+                        $_SESSION["id"] = $user["school_id"];
+                        $_SESSION["position"] = $user["position"];
+                        $_SESSION["bio"] = $user["bio"];
+
                         header("Location: /S.M.A.R.T/Pages/Admin.php");
                         exit;
                     case "Teacher":
+
+                        session_start();
+                        session_regenerate_id();
+
+                        $_SESSION["fname"] = $user["full_name"];
+                        $_SESSION["id"] = $user["school_id"];
+                        $_SESSION["position"] = $user["position"];
+                        $_SESSION["bio"] = $user["bio"];
+
                         header("Location: /S.M.A.R.T/Pages/Homepage.php");
                         exit;
                     case "Maintenance Staff":
+
+                        session_start();
+                        session_regenerate_id();
+
+                        $_SESSION["fname"] = $user["full_name"];
+                        $_SESSION["id"] = $user["school_id"];
+                        $_SESSION["position"] = $user["position"];
+                        $_SESSION["bio"] = $user["bio"];
+
                         header("Location: /S.M.A.R.T/Page/Admin.php");
                         exit;
                 }
