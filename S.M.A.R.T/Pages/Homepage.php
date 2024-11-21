@@ -61,11 +61,11 @@
                     <form action="../Authentication/makereport.php" method="post">
                         <div id="inputdiv">
                         <p>Name</p>
-                        <input type="text" id="rname" name="rname" require>
+                        <input type="text" id="rname" name="rname" required>
                         <br>
 
                         <p>Location of Issue</p>
-                        <select id="position" id="plocation" name="plocation" require>
+                        <select id="position" id="plocation" name="plocation" required>
                             <option disabled>Select Location</option>
                             <option value="RM101">RM101</option>
                             <option value="RM102">RM102</option>
@@ -84,11 +84,11 @@
                         <br>
 
                         <p>Problem</p>
-                        <input type="text" id="problem" name="problem" require>
+                        <input type="text" id="problem" name="problem" required>
                         <br>
                         
                         <p>Description</p>
-                        <input type="text" id="pdescription" name="pdescription" require>
+                        <input type="text" id="pdescription" name="pdescription" required>
                         <br>
                         <br>
 
