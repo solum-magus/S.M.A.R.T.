@@ -1,29 +1,29 @@
 <?php 
 session_start();
 
-if (!isset($_SESSION["position"])) {
-    echo "<script>
-    alert('You are not logged in!');
-    window.location.href = '../index.html';
-    </script>";
-    exit();
-}
-
-$Testsql = require __DIR__ . "/../database.php";
-$position = $_SESSION["position"];
-$sql = "SELECT * FROM userinfo WHERE position = '$position'";
-$result = $Testsql->query($sql);
-
-$sql = "SELECT * FROM reportdetails WHERE status IN ('Pending', 'Ongoing', 'Resolved') ORDER BY date_reported DESC";
-$Report = $Testsql->query($sql);
-
-$reports = []; 
-
-if ($Report->num_rows > 0) {
-    while ($row = $Report->fetch_assoc()) { 
-        $reports[] = $row;  
+    if (!isset($_SESSION["position"])) {
+        echo "<script>
+        alert('You are not logged in!');
+        window.location.href = '../index.html';
+        </script>";
+        exit();
     }
-}
+    
+    $Testsql = require __DIR__ . "/../database.php";
+    $position = $_SESSION["position"];
+    $sql = "SELECT * FROM userinfo WHERE position = '$position'";
+    $result = $Testsql->query($sql);
+    
+    $sql = "SELECT * FROM reportdetails WHERE status IN ('Pending', 'Ongoing', 'Resolved') ORDER BY date_reported DESC";
+    $Report = $Testsql->query($sql);
+    
+    $reports = []; 
+    
+    if ($Report->num_rows > 0) {
+        while ($row = $Report->fetch_assoc()) { 
+            $reports[] = $row;  
+        }
+    }
 ?>
 
 <html>
