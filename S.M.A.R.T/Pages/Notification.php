@@ -1,39 +1,39 @@
 <?php 
-session_start();
-
-if (!isset($_SESSION["position"])) {
-    echo "<script>
-    alert('You are not logged in!');
-    window.location.href = '../index.html';
-    </script>";
-    exit();
-}
-
-$Testsql = require __DIR__ . "/../database.php";
-$position = $_SESSION["position"];
-
-$sql = "SELECT * FROM reportdetails WHERE status IN ('Pending', 'Ongoing', 'Resolved')";
-$reports = $Testsql->query($sql);
-
-$pendingReports = [];
-$ongoingReports = [];
-$resolvedReports = [];
-
-if ($reports->num_rows > 0) {
-    while ($row = $reports->fetch_assoc()) { 
-        switch ($row['status']) {
-            case 'Pending':
-                $pendingReports[] = $row;
-                break;
-            case 'Ongoing':
-                $ongoingReports[] = $row;
-                break;
-            case 'Resolved':
-                $resolvedReports[] = $row;
-                break;
+    session_start();
+    
+    if (!isset($_SESSION["position"])) {
+        echo "<script>
+        alert('You are not logged in!');
+        window.location.href = '../index.html';
+        </script>";
+        exit();
+    }
+    
+    $Testsql = require __DIR__ . "/../database.php";
+    $position = $_SESSION["position"];
+    
+    $sql = "SELECT * FROM reportdetails WHERE status IN ('Pending', 'Ongoing', 'Resolved')";
+    $reports = $Testsql->query($sql);
+    
+    $pendingReports = [];
+    $ongoingReports = [];
+    $resolvedReports = [];
+    
+    if ($reports->num_rows > 0) {
+        while ($row = $reports->fetch_assoc()) { 
+            switch ($row['status']) {
+                case 'Pending':
+                    $pendingReports[] = $row;
+                    break;
+                case 'Ongoing':
+                    $ongoingReports[] = $row;
+                    break;
+                case 'Resolved':
+                    $resolvedReports[] = $row;
+                    break;
+            }
         }
     }
-}
 ?>
 
 <html>
