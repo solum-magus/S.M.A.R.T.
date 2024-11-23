@@ -1,5 +1,13 @@
 <?php
 session_start();
+if (!isset($_SESSION["position"])) {
+    echo "<script>
+    alert('You are not logged in!');
+    window.location.href = '../index.html';
+    </script>";
+    exit();
+}
+
 $mysqli = require __DIR__ . "/../database.php";
 
 $sql = "SELECT report_id, rname, plocation, problem, pdescription  FROM reportdetails";
