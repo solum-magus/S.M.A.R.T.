@@ -1,20 +1,20 @@
 <?php 
 session_start();
 
-if (!isset($_SESSION["position"])) {
-    echo "<script>
-    alert('You are not logged in!');
-    window.location.href = '../index.html';
-    </script>";
-    exit();
-}
-
-$Testsql = require __DIR__ . "/../database.php";
-$position = $_SESSION["position"];
-$sql = "SELECT * FROM userinfo WHERE position = '$position'";
-$result = $Testsql->query($sql);
-?>
-
+	if (!isset($_SESSION["position"])) {
+	    echo "<script>
+	    alert('You are not logged in!');
+	    window.location.href = '../index.html';
+	    </script>";
+	    exit();
+	}
+	
+	$Testsql = require __DIR__ . "/../database.php";
+	$position = $_SESSION["position"];
+	$sql = "SELECT * FROM userinfo WHERE position = '$position'";
+	$result = $Testsql->query($sql);
+	?>
+	
 
 
 <html>
