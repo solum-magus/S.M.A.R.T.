@@ -1,7 +1,13 @@
 <?php
 
     session_start();
-
+	if (!isset($_SESSION["position"])) {
+	    echo "<script>
+	    alert('You are not logged in!');
+	    window.location.href = '../index.html';
+	    </script>";
+	    exit();
+	}
     if (isset($_SESSION["fname"]) && isset($_SESSION["position"])) {
 
         $mysqli = require __DIR__ . "/../database.php";
