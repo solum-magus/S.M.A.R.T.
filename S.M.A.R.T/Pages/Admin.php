@@ -53,7 +53,7 @@ if ($result->num_rows > 0) {
 					    <th>Report ID</th>
 					    <th>Location</th>
 						<th>Problem Description</th>
-						<th>Status</th>
+						<th>Description</th>
 					  </tr>
                       <?php foreach ($reports as $report): ?>
 					  <tr>
